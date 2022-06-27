@@ -1,18 +1,18 @@
 const random = Math.floor(Math.random() * 100) + 1;
 
-var guesses = document.querySelector('.guesses');
-var lastResult = document.querySelector('.lastResult');
-var lowOrHi = document.querySelector('.lowOrHi');
-var attempt = document.querySelector('.attempt');
+let guesses = document.querySelector('.guesses');
+let lastResult = document.querySelector('.lastResult');
+let lowOrHi = document.querySelector('.lowOrHi');
+let attempt = document.querySelector('.attempt');
 
-var guessSubmit = document.querySelector('.guessSubmit');
-var guessField = document.querySelector('.guessField');
+let guessSubmit = document.querySelector('.guessSubmit');
+let guessField = document.querySelector('.guessField');
 
-var guessesCount = 1;
-var resetButton;
+let guessesCount = 1;
+let resetButton;
 
 function checkGuess() {
-    var userGuess = Number(guessField.value);
+    let userGuess = Number(guessField.value);
     if (guessesCount === 1) {
         guesses.textContent = 'Предыдущий ответ: ';
     }
@@ -20,7 +20,7 @@ function checkGuess() {
     guesses.textContent += userGuess + ', ';
     }
     if (userGuess === random) {
-        lastResult.textContent = 'Поздравляю! Ты угадал!';
+        lastResult.textContent = `Поздравляю! Ты угадал с ${guessesCount} раза!`;
         lastResult.style.backgroundColor = 'green';
         lowOrHi.textContent = '';
         setGameOver();
@@ -36,7 +36,7 @@ function checkGuess() {
             guessesCount--;
             attempt.textContent = `Осталось ${10 - guessesCount} попыток`;
             lastResult.textContent = 'Ошибка!';
-            lowOrHi.textContent = 'Введите число!!!';
+            lowOrHi.textContent = 'Введите число от 1 до 100';
         }
         else if(userGuess > 100){
             guessesCount--;
@@ -86,8 +86,8 @@ function setGameOver() {
 function resetGame() {
     guessesCount = 1;
 
-    var resetParas = document.querySelectorAll('.resultParas p');
-    for (var i = 0; i < resetParas.length; i++){
+    let resetParas = document.querySelectorAll('.resultParas p');
+    for (let i = 0; i < resetParas.length; i++){
         resetParas[i].textContent = '';
     }
 
