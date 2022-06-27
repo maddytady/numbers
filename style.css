@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    color: rgb(201, 201, 201);
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    font-size: 25px;
+    padding: 25px;
+}
+
+hr {  
+    width: 50%;
+}
+
+li {
+    margin-top: 5px;
+}
+.container {
+    background: -webkit-linear-gradient(45deg, rgb(31, 93, 133), rgb(69, 44, 112));
+    background: -moz-linear-gradient(45deg, rgb(31, 93, 133), rgb(69, 44, 112));
+    background: linear-gradient(45deg, rgb(31, 93, 133), rgb(69, 44, 112));
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.card-about {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    min-width: 450px;
+    width: 40%;
+    min-height: 250px;
+
+}
+.text{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-photo {
+    flex-wrap: nowrap;
+    width: 250px;
+    margin: 15px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    min-width: 450px;
+    width: 40%;
+    min-height: 250px;
+
+}
+.guessSubmit{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+
+}
+.lab{
+    margin: auto;
+    margin-bottom: 15px;
+}
+.guessField{
+    margin-left: 30px;
+    text-align: center;
+    font-family: inherit;
+    font-size: 20px;
+    background-color: skyblue;
+    color: black;
+    border: none;
+    border-radius: 20px;
+}
+.guessField:hover{
+    background-color: rgb(114, 175, 199);
+}
+.guessField:focus{
+    background-color: rgb(123, 192, 219);
+    border: none;
+}
+.btn{
+
+    min-width: 200px;
+    word-wrap: normal;
+    height: 40px;
+    color: aliceblue;
+    border-radius: 20px;
+    background: -webkit-linear-gradient(180deg, rgb(37, 102, 144) 15%, rgb(40, 66, 144) 73%, rgb(57, 50, 171) 100%);
+    background: -moz-linear-gradient(180deg, rgb(37, 102, 144) 15%, rgb(40, 66, 144) 73%, rgb(57, 50, 171) 100%);
+    background: linear-gradient(180deg, rgb(37, 102, 144) 15%, rgb(40, 66, 144) 73%, rgb(57, 50, 171) 100%);
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    border: 1px solid rgba(245, 245, 245, 0.178);
+    
+}
+.btn:hover{
+    margin-left: auto;
+    min-width: 200px;
+    word-wrap: normal;
+    height: 40px;
+    color: aliceblue;
+    border-radius: 20px;
+    background: -webkit-linear-gradient(180deg, rgb(47, 123, 172) 15%, rgb(46, 77, 172) 73%, rgb(69, 61, 199) 100%);
+    background: -moz-linear-gradient(180deg, rgb(47, 123, 172) 15%, rgb(46, 77, 172) 73%, rgb(69, 61, 199) 100%);
+    background: linear-gradient(180deg, rgb(47, 123, 172) 15%, rgb(46, 77, 172) 73%, rgb(69, 61, 199) 100%);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.27);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.27);
+    box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.27);
+}
+.card-input {
+    margin-top: 150px;
+    align-self: center;
+    min-width: 450px;
+    width: 50%;
+}
+
+.list {
+    margin-left: 5px;
+    list-style: none;
+    text-align: center;
+}
+.title {
+    text-align: center;
+
+}
+.tab {
+    padding: 5px;
+    margin: auto;
+    width: 40%;
+}
+
+.tab-course {
+    padding: 5px;
+    margin: auto;
+    width: 70%;
+}
+td {
+    margin: auto;
+    text-align: center;
+}
+.tab-title {
+    margin-bottom: 15px;
+    border-bottom: 1px solid gray;
+}
+
+.button-group {
+    margin: auto;
+    margin-top: 15px;
+}
+
+button {
+    font-family: inherit;
+    width: 120px;
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    color: aliceblue;
+    margin-left: 20px;
+}
+button:hover {
+    cursor: pointer;
+}
+.btn-vk {
+    background: -webkit-linear-gradient(180deg, rgb(0, 119, 255) 36%, rgb(103, 208, 255) 100%);
+    background: -moz-linear-gradient(180deg, rgb(0, 119, 255) 36%, rgb(103, 208, 255) 100%);
+    background: linear-gradient(180deg, rgb(0, 119, 255) 36%, rgb(103, 208, 255) 100%);
+}
+.btn-vk:hover {
+    background: -webkit-linear-gradient(180deg, rgb(0, 199, 255) 36%, rgb(103, 255, 255) 100%);
+    background: -moz-linear-gradient(180deg, rgb(0, 199, 255) 36%, rgb(103, 255, 255) 100%);
+    background: linear-gradient(180deg, rgb(0, 199, 255) 36%, rgb(103, 255, 255) 100%);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.27);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.27);
+    box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.27);
+}
+.btn-git {
+    background: -webkit-linear-gradient(180deg, rgb(57, 28, 108) 39%, rgb(83, 36, 118) 70%, rgb(101, 41, 126) 90%);
+    background: -moz-linear-gradient(180deg, rgb(57, 28, 108) 39%, rgb(83, 36, 118) 70%, rgb(101, 41, 126) 90%);
+    background: linear-gradient(180deg, rgb(57, 28, 108) 39%, rgb(83, 36, 118) 70%, rgb(101, 41, 126) 90%);
+}
+.btn-git:hover {
+    background: -webkit-linear-gradient(180deg, rgb(76, 37, 144) 39%, rgb(100, 40, 144) 70%, rgb(135, 50, 171) 90%);
+    background: -moz-linear-gradient(180deg, rgb(76, 37, 144) 39%, rgb(100, 40, 144) 70%, rgb(135, 50, 171) 90%);
+    background: linear-gradient(180deg, rgb(76, 37, 144) 39%, rgb(100, 40, 144) 70%, rgb(135, 50, 171) 90%);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.27);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.27);
+    box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.27);
+}
+.btn-tel {
+    background: -webkit-linear-gradient(180deg, rgb(37, 102, 144) 15%, rgb(40, 66, 144) 73%, rgb(57, 50, 171) 100%);
+    background: -moz-linear-gradient(180deg, rgb(37, 102, 144) 15%, rgb(40, 66, 144) 73%, rgb(57, 50, 171) 100%);
+    background: linear-gradient(180deg, rgb(37, 102, 144) 15%, rgb(40, 66, 144) 73%, rgb(57, 50, 171) 100%);
+}
+.btn-tel:hover {
+    background: -webkit-linear-gradient(180deg, rgb(47, 123, 172) 15%, rgb(46, 77, 172) 73%, rgb(69, 61, 199) 100%);
+    background: -moz-linear-gradient(180deg, rgb(47, 123, 172) 15%, rgb(46, 77, 172) 73%, rgb(69, 61, 199) 100%);
+    background: linear-gradient(180deg, rgb(47, 123, 172) 15%, rgb(46, 77, 172) 73%, rgb(69, 61, 199) 100%);
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.27);
+    -moz-box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.27);
+    box-shadow: 0px 0px 10px 2px rgba(255, 255, 255, 0.27);
+}
+
+@media screen and (max-width: 1200px) {
+    .card {
+      flex-direction: column;
+      text-align: center;
+      width: 100%;
+      margin-top: 15px;
+      
+    }
+    .card-about {
+        text-align: center;
+        flex-direction: column;
+        width: 90%;
+        
+      }
+    .card-photo {
+        width: 50%;
+        margin: auto;
+        margin-top: 15px;
+    }
+    .text {
+        margin-left: 22.500px;
+    }
+    .tab {
+        padding: 5px;
+        margin: auto;
+        width: 50%;
+    }
+    .tab-course {
+        padding: 5px;
+        margin: auto;
+        width: 100%;
+    }
+  }
