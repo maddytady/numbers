@@ -36,6 +36,7 @@ header {
 .text{
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .card {
