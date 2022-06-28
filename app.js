@@ -1,4 +1,4 @@
-const random = Math.floor(Math.random() * 100) + 1;
+let random = Math.floor(Math.random() * 100) + 1;
 
 let guesses = document.querySelector('.guesses');
 let lastResult = document.querySelector('.lastResult');
